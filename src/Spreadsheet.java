@@ -89,13 +89,17 @@ private String borderRow;
    System.out.print("      E     |");
    System.out.print("      F     |");
    System.out.println("      G     |");
+   System.out.println(borderRow);
    for(int row=1; row<rows; row++)
    {
-     for(int col=1; col<cols; col++)
+     
+     for(int col=0; col<cols; col++)
      {
-       System.out.println(padOrTruncateDisplayString(sp[row][col]));
-       System.out.println(borderRow);
+       System.out.print(padOrTruncateDisplayString(sp[row][col])+"|");
+ 
      }
+     System.out.println();
+      System.out.println(borderRow);
    }
    
  }
