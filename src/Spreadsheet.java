@@ -77,6 +77,10 @@ private String borderRow;
  
  public void print() {
   // TODO 
+    for(int row=1;row<rows;row++)
+   {
+    sp[row][0]=new CellNumeric(row+"");  
+    }
    System.out.print("             ");
    System.out.print("      A     |");
    System.out.print("      B     |");
@@ -99,4 +103,5 @@ private String borderRow;
 
 
 
+    
     
